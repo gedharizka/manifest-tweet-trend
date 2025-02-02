@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name:  springboot-app-service
+  name:  demo-service
   namespace: demo
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
-    app: springboot-app
+    app: demo
   ports:
-  - nodePort: 30082
+  - protocol: TCP
     port: 8000
     targetPort: 8000
