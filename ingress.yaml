@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 139.59.194.151.aku.laku.test  # Ganti dengan IP Ingress Controller
+  - host: 139.59.194.151.aku.laku.io  # Ganti dengan IP Ingress Controller
     http:
       paths:
       - path: /
