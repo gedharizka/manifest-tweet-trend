@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 209.38.56.180.nip.io  # Ganti dengan IP Ingress Controller
+  - host: 146.190.200.92.nip.io  # Ganti dengan IP Ingress Controller
     http:
       paths:
       - path: /
