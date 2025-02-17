@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name:  demo-service
+  name:  aku-laku-test-service
 spec:
   type: LoadBalancer
   selector:
-    app: demo
+    app: aku-laku-test
   ports:
   - protocol: TCP
     port: 8000

@@ -1,19 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: demo-ingress
+  name: aku-laku-test-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: 209.38.56.180.nip.io  # Ganti dengan IP Ingress Controller
+  - host: 104.248.96.112.aku-laku.test  # Ganti dengan IP Ingress Controller
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: demo-service
+            name: aku-laku-test-service
             port:
               number: 8000

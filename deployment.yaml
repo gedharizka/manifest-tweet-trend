@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-deployment
+  name: aku-laku-test-deployment
 spec:
   replicas: 1
   selector: 
     matchLabels:
-      app: demo
+      app: aku-laku-test
   template:
     metadata:
       labels:
-        app: demo
+        app: aku-laku-test
     spec:
       containers:
-        - name: demo
+        - name: aku-laku-test
           image: gedharizka/tweet-trend:latest
